@@ -146,4 +146,16 @@ nav {
 
 .contact {
     width: 80%;
+    padding-bottom: 30px;
+}
+
+#footer {
+    background-color: black;
+    color: green;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 0.5px solid white;
+    margin-right: 10px;
+    padding: 5px;
 }
