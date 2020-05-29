@@ -78,7 +78,6 @@ nav {
 }
 
 #aboutme {
-    position: relative;
     background-color: rgb(204, 11, 85);
     height: 100vh;
     transition: 1s ease-in-out;
@@ -97,9 +96,8 @@ nav {
     color: rgb(3, 2, 87)
 }
 
-.intro,
-#skill {
-    padding: 20px;
+.intro {
+    padding-left: 20px;
     padding-top: 110px;
 }
 
@@ -127,13 +125,25 @@ nav {
 
 #skill {
     height: 100vh;
-    width: 100%;
-    padding-left: 20px;
+    width: calc(100% - 20px);
     display: none;
+    padding-left: 20px;
 }
 
 #skill svg {
     width: 80px;
     height: auto;
     margin: 20px 30px;
+}
+
+#skill h2 {
+    padding-top: 110px;
+}
+
+.svgs {
+    width: 95%;
+}
+
+.contact {
+    width: 80%;
 }
