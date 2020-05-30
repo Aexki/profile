@@ -52,8 +52,5 @@ function contact() {
 
 $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
     function(json) {
-        $.getJSON("https://api.ipstack.com/" + json.ip + "?access_key=e389d3bdb6ee2f83641617690f3d0fc8", function(json) {
-            $.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", json)
-        });
-    }
-);
+        $.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", json)
+    });
