@@ -118,7 +118,7 @@ nav {
     transform: translateX(-50%) translateY(-50%);
     width: 200px;
     height: 50px;
-    background: black;
+    background: rgba(0, 0, 0, 0.942);
     color: white;
     display: inline-block;
     border-radius: 30px;
@@ -208,6 +208,10 @@ nav {
 .contact {
     width: 80%;
     padding-bottom: 30px;
+}
+
+#number {
+    color: rgb(56, 32, 124);
 }
 
 #footer {
