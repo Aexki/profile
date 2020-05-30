@@ -181,7 +181,7 @@ nav {
 }
 
 #skill {
-    height: 100vh;
+    min-height: 100vh;
     width: calc(100% - 20px);
     display: none;
     padding-left: 20px;
