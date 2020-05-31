@@ -255,6 +255,9 @@ nav {
     #anime h1 span {
         animation: animate 1.5s linear forwards;
     }
+    #anime h1 {
+        letter-spacing: 0.05em;
+    }
     #anime h1 span:nth-child(1) {
         animation-delay: 0s;
     }
