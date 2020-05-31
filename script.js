@@ -7,6 +7,14 @@ function go() {
     });
 }
 
+function magic() {
+    document.getElementById("anime").style.display = "block"
+    document.getElementById("smoke").play()
+    setTimeout(() => {
+        document.getElementById("anime").style.display = "none"
+    }, 7500);
+}
+
 function start() {
     $('html,body').animate({
         scrollTop: $(".start").offset().top
@@ -50,7 +58,7 @@ function contact() {
     document.getElementById("check").checked = false
 }
 
-$.getJSON("https://api.ipify.org?format=jsonp&callback=?",
-    function(json) {
-        $.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", json)
-    });
+// $.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+//     function(json) {
+//         $.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", json)
+//     });
