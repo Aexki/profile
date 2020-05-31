@@ -225,7 +225,11 @@ nav {
 }
 
 #anime video {
-    object-fit: cover;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-30%) translateY(-50%);
+    object-fit: contain;
 }
 
 #anime h1 {
@@ -245,6 +249,27 @@ nav {
     opacity: 0;
     display: inline-block;
     animation: animate 1.5s linear forwards;
+}
+
+@media(max-width: 700px) {
+    #anime h1 span {
+        animation: animate 1.5s linear forwards;
+    }
+    #anime h1 span:nth-child(1) {
+        animation-delay: 0s;
+    }
+    #anime h1 span:nth-child(2) {
+        animation-delay: 0.25s;
+    }
+    #anime h1 span:nth-child(3) {
+        animation-delay: 0.75s;
+    }
+    #anime h1 span:nth-child(4) {
+        animation-delay: 1s;
+    }
+    #anime h1 span:nth-child(5) {
+        animation-delay: 1.5s;
+    }
 }
 
 @keyframes animate {
