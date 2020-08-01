@@ -59,8 +59,8 @@ function contact() {
 }
 
 $.getJSON("https://api.ipify.org?format=json",
-    function(json) {
+    function(jsondata) {
 //         $.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", json)
-           console.log(json)
-           console.log(json[ip])
-    });
+           console.log(jsondata)
+           console.log(jsondata["ip"])
+});
