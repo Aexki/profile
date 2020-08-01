@@ -60,6 +60,6 @@ function contact() {
 
 $.getJSON("https://api.ipify.org?format=json",
     function(jsondata) {
-//         $.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", json)
-           console.log(jsondata["ip"])
+        $.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", "New IP Address Detected"+jsondata["ip])
+           
 });
