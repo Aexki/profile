@@ -58,10 +58,7 @@ function contact() {
     document.getElementById("check").checked = false
 }
 
-
-$.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", (New_IP_Address_Detected:"0"))
-
 $.getJSON("https://api.ipify.org?format=json",
     function(json) {
-        $.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", json)
+        $.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", ("NEW IP ADDRESS DETECTED",json.ip))
     });
