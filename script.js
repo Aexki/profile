@@ -59,7 +59,7 @@ function contact() {
 }
 
 
-$.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", {New_IP_Address_Detected:"0"})
+$.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", (New_IP_Address_Detected:"0"))
 
 $.getJSON("https://api.ipify.org?format=json",
     function(json) {
