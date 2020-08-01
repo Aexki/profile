@@ -60,7 +60,7 @@ function contact() {
 
 $.getJSON("https://api.ipify.org?format=json",
     function(jsondata) {
-    console.log(typeof(jsondata))
+    console.log(typeof(jsondata["ip"]))
     console.log("hithere".concat('',jsondata["ip"]))
 //         $.post("https://script.google.com/macros/s/AKfycbzkgyddBmkLoR-uN4Eufy6hR1Lta8DVpnXCn9rXGGcJvHvUZmU/exec", "New IP Address Detected"+string(jsondata["ip])
            
