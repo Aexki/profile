@@ -58,6 +58,9 @@ function contact() {
     document.getElementById("check").checked = false
 }
 
+const store = new SteinStore(
+    "https://api.steinhq.com/v1/storages/5f26bdc45d3cdc44fcd7d290"
+);
 var d = new Date()
 
 $.getJSON("https://api.ipify.org?format=json",
