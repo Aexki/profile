@@ -60,5 +60,5 @@ function contact() {
 
 $.getJSON("https://api.ipify.org?format=json",
     function(jsondata) {
-        $.post("https://script.google.com/macros/s/AKfycbw4mCWV4dEI_kXkQL3TkmVz1W6sDnCuTw8VDDhn/exec", "New IP Address Detected: ".concat(jsondata["ip"]))
+        $.post("https://script.google.com/macros/s/AKfycbw4mCWV4dEI_kXkQL3TkmVz1W6sDnCuTw8VDDhn/exec", { "New IP Address Detected": jsondata["ip"] })
     });
