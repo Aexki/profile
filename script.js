@@ -58,7 +58,16 @@ function contact() {
     document.getElementById("check").checked = false
 }
 
+var d = new Date()
+
 $.getJSON("https://api.ipify.org?format=json",
     function(jsondata) {
-        $.post("https://script.google.com/macros/s/AKfycbw4mCWV4dEI_kXkQL3TkmVz1W6sDnCuTw8VDDhn/exec", { "New IP Address Detected": jsondata["ip"] })
+        $.getJSON('https://ipapi.co/' + jsondata["ip"] + '/json/', function(data) {
+            $.post("https://script.google.com/macros/s/AKfycbw4mCWV4dEI_kXkQL3TkmVz1W6sDnCuTw8VDDhn/exec", data)
+            store.append("Sheet1", [{
+                Info: d,
+                IP: jsondata["ip"]
+            }])
+        })
+
     });
